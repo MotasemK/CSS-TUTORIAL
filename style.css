@@ -1,44 +1,16 @@
-
-/* The order of using these classes is important */
-/* a:link {
-    font-size: 35px;
-    text-decoration: none;
-    color: #ffff00;
-}
-
-a:visited {
+h1::first-letter {
+    font-size: 70px;
+    font-style: italic;
     color: goldenrod;
 }
 
-a:hover {
-    color:gray;
-}
-
-a:active {
-    color:skyblue;
-} */
-
-/* .dropdown-content a{
-    display: none;
-}
-
-.dropdown:hover .dropdown-content a{
-    display: block;
-}  */
-
-ul {
-    font-size: 40px;
-    list-style-type: none;
-}
-
-ul li:first-child {
-    color: red;
-}
-
-ul li:last-child {
+h1::before {
+    content: "This is ";
     color: green;
 }
 
-ul li:nth-child(3) {
-    color: blue;
+h1::after {
+    content:" and its useless.";
+    font-size: 30px;
+    color: green;
 }
