@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .container {
+            background-color: #ccc;
+        }
+        /* Floated elements jump out from normal float the container became at zero position from the top thats why the gray backgrond is not appearing properly */
+        .left {
+            background-color: orangered;
+            width: 100px;
+            height: 100px;
+            float: left;
+        }
+
+        .right {
+            background-color: green;
+            width: 100px;
+            height: 100px;
+            float: right;
+        }
+        
+        .clearFix::after {
+            content:"";
+            display: block;
+            clear: both; /* Clearing floats */
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div class="container clearFix">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+
+</body>
+</html>
