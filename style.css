@@ -18,10 +18,27 @@ a:active {
     color:skyblue;
 } */
 
-.dropdown-content a{
+/* .dropdown-content a{
     display: none;
 }
 
 .dropdown:hover .dropdown-content a{
     display: block;
-} 
+}  */
+
+ul {
+    font-size: 40px;
+    list-style-type: none;
+}
+
+ul li:first-child {
+    color: red;
+}
+
+ul li:last-child {
+    color: green;
+}
+
+ul li:nth-child(3) {
+    color: blue;
+}
