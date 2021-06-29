@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>backgrounds</title>
+    <style>
+
+        div {
+            width: 200px;
+            height: 200px;
+            border: 50px double red;
+            margin: 50px auto;
+            padding:20px;
+            background-image: url("/download.png");
+            background-repeat: no-repeat;
+            /* background-position: 20% 100%; */
+            /* background-size: height width; */
+            /* background-size: contain; */
+            background-origin: padding-box;
+            background-clip: padding-box; /*border-box : from the border box left corner -- padding box from inside padding box*/
+
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        Hello World
+    </div>
+</body>
+</html>
